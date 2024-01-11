@@ -3,7 +3,7 @@ const { body, validationResult } = require('express-validator');
 
 exports.messages_get = async function (req, res, next) {
 	try {
-		let messages = await Message.find().populate('user');
+		let messages = await Message.find().maxTimeMS(20000).populate('user');
 		messages = messages.sort((a, b) => {
 			return a.timestamp < b.timestamp ? 1 : -1;
 		});
