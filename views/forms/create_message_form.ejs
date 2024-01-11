@@ -1,0 +1,31 @@
+<%- include('../layout/header') -%>
+
+<div class="form-container">
+	<h1>Create a Message</h1>
+		<form class="log-in-container" action="/create-message" method="POST">
+
+			<div class="log-in-container">
+				<label for="title">Message Title</label>
+				<input
+					name="title"
+					type="text"
+				/>
+			</div>
+
+			<div class="label-input-container">
+				<label for="text">Your Message</label>
+				<textarea
+					id="text"
+					name="text"
+					rows="4"
+					cols="50"
+				>
+				</textarea>
+			</div>
+
+			<button class="submit-button">
+				Submit
+			</button>
+
+		</form>
+</div>

@@ -1,0 +1,29 @@
+<%- include('../layout/header') -%>
+
+<div class="form-container">
+	<h1>Log In</h1>
+
+	<form  class="log-in-container" action="/log-in" method="POST">
+
+		<div class="label-input-container">
+			<label for="username">Username/Email</label>
+			<input
+				name="username"
+				type="text"
+			/>
+		</div>
+		<div class="label-input-container">
+			<label for="password">Password</label>
+			<input
+				name="password"
+				type="password"
+			/>
+		</div>
+
+		<button class="submit-button">
+			Log In
+		</button>
+					
+	</form>
+
+</div>				
